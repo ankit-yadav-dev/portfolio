@@ -1,4 +1,3 @@
-import { div, nav } from 'framer-motion/client';
 import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { FaXmark } from 'react-icons/fa6';
@@ -36,6 +35,13 @@ const Navbar = () => {
           <a href="#skills" className='relative text-white/80 transition
            duration-300 hover:text-purple group'>
             <span>Skills</span>
+            <span className='absolute left-0 -bottom-1 w-0 h-0.5
+            bg-purple transition-all duration-300 group-hover:w-full'></span>
+          </a>
+
+          <a href="#experience" className='relative text-white/80 transition
+           duration-300 hover:text-purple group'>
+            <span>Experience</span>
             <span className='absolute left-0 -bottom-1 w-0 h-0.5
             bg-purple transition-all duration-300 group-hover:w-full'></span>
           </a>
@@ -81,38 +87,44 @@ const Navbar = () => {
           <div className='md:hidden mt-4 bg-dark-300 h-screen rounded-lg
           p-4 flex flex-col space-y-4 text-center justify-center'>
 
-            <a href="#home" onClick={() => setShowMenu(!showMenu)} className='text-2xl cursor-pointer'
-              className='relative text-white/80 transition
+            <a href="#home" onClick={() => setShowMenu(!showMenu)}
+              className='relative text-white/80 transition text-2xl cursor-pointer
            duration-300 hover:text-purple group'>
               <span>Home</span>
             </a>
 
-            <a href="#about" onClick={() => setShowMenu(!showMenu)} className='text-2xl cursor-pointer'
-              className='relative text-white/80 transition
+            <a href="#about" onClick={() => setShowMenu(!showMenu)}
+              className='relative text-white/80 transition text-2xl cursor-pointer
            duration-300 hover:text-purple group'>
               <span>About</span>
             </a>
 
-            <a href="#skills" onClick={() => setShowMenu(!showMenu)} className='text-2xl cursor-pointer'
-              className='relative text-white/80 transition
+            <a href="#skills" onClick={() => setShowMenu(!showMenu)}
+              className='relative text-white/80 transition text-2xl cursor-pointer
            duration-300 hover:text-purple group'>
               <span>Skills</span>
             </a>
 
-            <a href="#projects" onClick={() => setShowMenu(!showMenu)} className='text-2xl cursor-pointer'
+            <a href="#experience" onClick={() => setShowMenu(!showMenu)}
               className='relative text-white/80 transition
+           duration-300 hover:text-purple group text-2xl'>
+              <span>Experience</span>
+            </a>
+
+            <a href="#projects" onClick={() => setShowMenu(!showMenu)}
+              className='relative text-white/80 transition text-2xl cursor-pointer
            duration-300 hover:text-purple group'>
               <span>Projects</span>
             </a>
 
-            <a href="#educations" onClick={() => setShowMenu(!showMenu)} className='text-2xl cursor-pointer'
-              className='relative text-white/80 transition
+            <a href="#educations" onClick={() => setShowMenu(!showMenu)}
+              className='relative text-white/80 transition text-2xl cursor-pointer
            duration-300 hover:text-purple group'>
               <span>Educations</span>
             </a>
 
-            <a href="#contact" onClick={() => setShowMenu(!showMenu)} className='text-2xl cursor-pointer'
-              className='relative text-white/80 transition
+            <a href="#contact" onClick={() => setShowMenu(!showMenu)}
+              className='relative text-white/80 transition text-2xl cursor-pointer
            duration-300 hover:text-purple group'>
               <span>Contact</span>
             </a>

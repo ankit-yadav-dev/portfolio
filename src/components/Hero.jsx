@@ -39,9 +39,7 @@ const Hero = () => {
                     </div>
 
                     <p className="text-lg text-gray-300 mb-8">
-                        Passionate Full Stack Developer specializing in the MERN stack. I build
-                        responsive, scalable, and user-friendly web applications while constantly
-                        learning new technologies and solving real-world problems.
+                        Software Developer with hands-on experience in building and maintaining live production websites. Skilled in React.js, JavaScript, Node.js, and API integration. Passionate about developing responsive, user-friendly applications, solving real-world problems, and continuously learning new technologies.
                     </p>
                     <div className="flex space-x-4">
                         <a href="#projects" className="px-6 py-3 bg-purple
